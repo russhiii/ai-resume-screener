@@ -5,14 +5,14 @@ from model import load_job_description, rank_resumes
 
 st.set_page_config(page_title="AI Resume Screener", layout="wide")
 
-# Sidebar for job description input
+
 st.sidebar.header("Job Description")
 job_description = st.sidebar.text_area("Paste or write job description here:", height=200)
 
 if job_description.strip() == "":
     st.sidebar.warning("Please enter the job description to rank resumes.")
 
-# Main page
+
 st.title("📄 AI Resume Screener")
 st.write("Upload resumes and match them against a job description using NLP.")
 
